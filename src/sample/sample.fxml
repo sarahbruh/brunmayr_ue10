@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints maxWidth="236.0" minWidth="206.4000244140625" prefWidth="236.0" />
+      <ColumnConstraints maxWidth="316.0000366210937" minWidth="224.0" prefWidth="232.79998779296875" />
+      <ColumnConstraints maxWidth="180.79998779296875" minWidth="162.39996337890625" prefWidth="169.60001220703123" />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <TextArea fx:id="textarea" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="textfield" prefHeight="26.0" prefWidth="138.0" GridPane.columnIndex="1" />
+      <GridPane prefHeight="207.0" prefWidth="318.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#buttonClicked" prefHeight="50.0" prefWidth="100.0" text="1" />
+            <Button mnemonicParsing="false" onMouseClicked="#buttonClicked" prefHeight="50.0" prefWidth="100.0" text="3" GridPane.columnIndex="2" />
+            <Button mnemonicParsing="false" onMouseClicked="#buttonClicked" prefHeight="50.0" prefWidth="100.0" text="2" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" onMouseClicked="#buttonClicked" prefHeight="50.0" prefWidth="100.0" text="4" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onMouseClicked="#buttonClicked" prefHeight="50.0" prefWidth="100.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onMouseClicked="#buttonClicked" prefHeight="50.0" prefWidth="100.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onMouseClicked="#buttonClicked" prefHeight="50.0" prefWidth="100.0" text="7" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onMouseClicked="#buttonClicked" prefHeight="50.0" prefWidth="100.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onMouseClicked="#buttonClicked" prefHeight="50.0" prefWidth="100.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onMouseClicked="#buttonClicked" prefHeight="50.0" prefWidth="100.0" text="0" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onMouseClicked="#setComma" prefHeight="50.0" prefWidth="100.0" text="." GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onMouseClicked="#setSign" prefHeight="50.0" prefWidth="100.0" text="-" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <GridPane prefHeight="282.0" prefWidth="172.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="63.799993896484374" minHeight="10.0" prefHeight="55.799993896484374" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="84.4" minHeight="10.0" prefHeight="71.79999389648438" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="100.00001220703125" minHeight="10.0" prefHeight="69.40000610351561" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="117.20000000000002" minHeight="10.0" prefHeight="77.99998779296877" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#enter" prefHeight="50.0" prefWidth="100.0" text="Enter" />
+            <Button fx:id="btnC" mnemonicParsing="false" onMouseClicked="#C" prefHeight="50.0" prefWidth="100.0" text="C" GridPane.rowIndex="1" />
+            <Button fx:id="btnCE" mnemonicParsing="false" onMouseClicked="#CE" prefHeight="50.0" prefWidth="100.0" text="CE" GridPane.rowIndex="2" />
+            <GridPane prefHeight="97.0" prefWidth="172.0" GridPane.rowIndex="3">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="81.199951171875" minWidth="10.0" prefWidth="50.79998779296875" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.20001220703125" minWidth="10.0" prefWidth="121.20001220703125" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="plus" mnemonicParsing="false" onMouseClicked="#Operatoren" prefHeight="20.0" prefWidth="50.0" text="+" />
+                  <Button fx:id="minus" mnemonicParsing="false" onMouseClicked="#Operatoren" prefHeight="20.0" prefWidth="50.0" text="-" GridPane.columnIndex="1" />
+                  <Button fx:id="mal" mnemonicParsing="false" onMouseClicked="#Operatoren" prefHeight="20.0" prefWidth="50.0" text="*" GridPane.rowIndex="1" />
+                  <Button fx:id="durch" mnemonicParsing="false" onMouseClicked="#Operatoren" prefHeight="20.0" prefWidth="50.0" text="/" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="kehrwert" mnemonicParsing="false" onMouseClicked="#Operatoren" prefHeight="20.0" prefWidth="50.0" text="1/x" GridPane.rowIndex="2" />
+                  <Button fx:id="vertauschen" mnemonicParsing="false" onMouseClicked="#Operatoren" prefHeight="20.0" prefWidth="50.0" text="x&lt;-&gt;y" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</GridPane>
